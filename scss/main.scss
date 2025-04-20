@@ -54,6 +54,36 @@ footer.footer {
     text-align: justify;
 }
 
+.image-card {
+    position: relative;
+
+    &:hover {
+        .titre-image {
+            opacity: 1;
+        }
+
+        img {
+            filter: brightness(0.3);
+        }
+    }
+
+    img {
+        transition: : all 0.3s;
+        ;
+    }
+
+
+}
+
+.titre-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+
 p {
     font-family: $font-family-serif;
     font-size: 18px;

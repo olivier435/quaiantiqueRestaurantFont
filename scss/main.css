@@ -12012,6 +12012,27 @@ footer.footer {
   justify-content: center;
 }
 
+.test-justify {
+  text-align: justify;
+}
+
+.image-card {
+  position: relative;
+}
+.image-card:hover .titre-image {
+  opacity: 1;
+}
+.image-card:hover img {
+  filter: brightness(0.3);
+}
+.titre-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
 p {
   font-family: "Hind Madurai", serif;
   font-size: 18px;
