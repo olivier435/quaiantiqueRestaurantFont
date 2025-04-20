@@ -8,6 +8,7 @@ export const allRoutes = [
     new Route("/signup", "Connexion", "/pages/auth/signup.html"),
     new Route("/account", "Mon compte", "/pages/auth/account.html"),
     new Route("/editPassword", "Changement de mot de passe", "/pages/auth/editPassword.html"),
+    new Route("/allResa", "vos réservations", "/pages/reservations/allResa.html"),
 ];
 
 // Le titre s'affiche comme ceci : Route.titre - websitename
