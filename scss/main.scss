@@ -2,5 +2,56 @@
 @import 'custom';
 
 html {
-    color: green;
+    position: relative;
+    min-height: 100%;
+}
+
+main {
+    margin-bottom: 250px;
+
+}
+
+
+
+footer.footer {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.hero-scene {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/fondHeroScene.jpg');
+        background-size: cover;
+        filter: brightness(0.3);
+    }
+
+    * {
+        //positionner les éléments devant le ::-ms-ticks-before
+        position: relative;
+    }
+
+    .hero-scene-content {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+p {
+    font-family: $font-family-serif;
+    font-size: 18px;
+
 }
