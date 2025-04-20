@@ -7,7 +7,7 @@ html {
 }
 
 main {
-    margin-bottom: 250px;
+    margin-bottom: 270px;
 
 }
 
@@ -20,11 +20,20 @@ footer.footer {
     width: 100%;
 }
 
+p {
+    font-family: $font-family-serif;
+    font-size: 18px;
+
+}
+
+
+
 .hero-scene {
     position: relative;
 
     &::before {
         position: absolute;
+        margin-bottom: 15px;
         content: '';
         top: 0;
         left: 0;
@@ -58,9 +67,13 @@ footer.footer {
     position: relative;
 
     &:hover {
-        .titre-image {
+
+        .titre-image,
+        .action-image-buttons {
             opacity: 1;
+
         }
+
 
         img {
             filter: brightness(0.3);
@@ -68,8 +81,8 @@ footer.footer {
     }
 
     img {
-        transition: : all 0.3s;
-        ;
+        transition: all 0.3s;
+
     }
 
 
@@ -81,11 +94,23 @@ footer.footer {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
+    transition: all 0.3s;
+    ;
+}
+
+.action-image-buttons {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
 }
 
 
-p {
-    font-family: $font-family-serif;
-    font-size: 18px;
 
+.form-label {
+    color: $primary;
 }
